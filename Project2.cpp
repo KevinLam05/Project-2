@@ -5,16 +5,16 @@
 // Write template class Tab here
 class Tab {
     public:
-        Tab(const std::string& url, const std::string& name, const int memory) : url_(url), name_(name), memory_(memory) {}
+        Tab(const std::string& url, const std::string& name, const double memory) : url_(url), name_(name), memory_(memory) {}
         const std::string& name() const { return name_;}
         const std::string& url() const { return url_;}
-        int memory() const { return memory_;}
+        double memory() const { return memory_;}
         Tab* next = nullptr;
         Tab* prev = nullptr;
     private:
     std::string url_;
     std::string name_;
-    int memory_;
+    double memory_;
 };
 // Write template class Browser here
 template <typename T>
